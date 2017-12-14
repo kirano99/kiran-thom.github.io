@@ -19,7 +19,7 @@ body{
     position:fixed;
     left:50%;
     right 50%;
-    transform:translate(-49%, 220%);
+    transform:translate(-49%, 210%);
     position: fixed;
     z-index: 999;
     display: hidden;
@@ -50,7 +50,7 @@ a{
     position:fixed;
     left:50%;
     right 50%;
-    transform:translate(-50%, -15%);
+    transform:translate(-50%, -6%);
     position: fixed;
     z-index: 999;
     display: none;
