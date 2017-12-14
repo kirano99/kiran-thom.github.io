@@ -9,14 +9,15 @@ function init() {
 }
     
 $(function(){
-    $(".button").fadeIn(5000).removeClass('hidden');
+    $('#simple-menu').sidr();
+    $(".navclass").fadeIn(5000).removeClass('hidden');
     $(".textlogo").fadeIn(5000).removeClass('hidden');
     console.log('animation')   
 });
 
 $(window).scroll(function() {
 
-    if ($(this).scrollTop()>700)
+    if ($(this).scrollTop()>400)
      {
         $('.video-foreground').fadeOut();
      }
@@ -24,6 +25,17 @@ $(window).scroll(function() {
      {
       $('.video-foreground').fadeIn();
      }
+    
+    
  });
+
+function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+    comsole.log("worked")
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
 
 

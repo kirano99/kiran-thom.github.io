@@ -2,8 +2,12 @@
 <html>
     <head>
         <link rel=stylesheet href="CSS/styles.css">
-        <link rel="icon" href="http://example.com/favicon.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
+        
+    <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
         <script src = "JS/script.js"></script>
         
         
@@ -27,6 +31,20 @@
             </nav>
             
         </div>
+        
+        <!-- stuff for responsive sidebar-->
+        
+        <a id="simple-menu" class = "button" href="#sidr">menu</a>
+
+        <div id="sidr">
+            <ul>
+                <li class = "active"><a href="#">home</a></li>
+                <li><a href="#music">music</a></li>
+                <li><a href="#tour">tour</a></li>
+                <li><a href="#store">store</a></li>
+                <li><a href="#live">live</a></li>
+            </ul>
+            </div>
         
         
         
@@ -66,7 +84,7 @@
         
         <section id=scroller_content_one>
              <div id=Text_One>
-                <h1>INSERT TEXT/SOMETHING</h1>
+                <h1></h1>
                 <h1 id=smallertext>HERE</h1>
             </div>
         </section>
