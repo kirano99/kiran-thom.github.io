@@ -67,6 +67,16 @@ a{
     z-index: 999;
     display: none;
 }
+.textlogo1{
+    width:600px; 
+    height: auto;  
+    position:fixed;
+    left:50%;
+    right 50%;
+    transform:translate(-50%, -5%);
+    position: fixed;
+    z-index: 999;
+}
 .video-background {
   background: #000;
   position: relative;
@@ -158,6 +168,9 @@ vertical-align: middle;
     max-height: 50px;
 }
 
+#playbutton{
+    padding: 50px
+}
 
 
 
