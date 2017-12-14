@@ -172,8 +172,19 @@ vertical-align: middle;
         #imagecover{
         height:auto;
     }
+}
     
-    @media only screen and (max-width : 400px) { /*when width is less than 400*/
+@media only screen and (max-width : 400px) {
+    
+        .video-foreground,.video-background iframe {
+        visibility: hidden;
+            
+            
+    }
+}
+    
+    @media only screen and (max-width : 200px) { /*when width is less than 400*/
         body{
             visibility: hidden;
         }
+}
