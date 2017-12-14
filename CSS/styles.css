@@ -9,6 +9,17 @@ body{
     margin-bottom: 0;
 }
 
+@font-face {
+	font-family: 'GothamBook';
+	src: url('/Fonts/GothamBook.eot');
+	src: local('GothamBook'), url('/Fonts/GothamBook.woff') format('woff'), url('/Fonts/GothamBook.ttf') format('truetype');
+}
+
+body {
+	font-family: 'GothamBook' !important;
+    font-size: 17px
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -28,7 +39,7 @@ body{
     
     background-color: #e11d22;
     color: white;
-    padding: 14px 50px;
+    padding: 20px 46px;
     text-align: center; 
     text-decoration: none;
     display: inline-table;
@@ -46,12 +57,12 @@ a{
 }
 
 .textlogo{
-    width:500px; 
+    width:600px; 
     height: auto;  
     position:fixed;
     left:50%;
     right 50%;
-    transform:translate(-50%, -6%);
+    transform:translate(-50%, -5%);
     position: fixed;
     z-index: 999;
     display: none;
@@ -108,6 +119,8 @@ vertical-align: middle;
     max-width: 100%;
     height: auto;
     width: auto \ 9;
+        display: block;
+    margin: 0 auto;
 }
 #smalllogobottom{
     width:500px; 
@@ -135,6 +148,14 @@ vertical-align: middle;
 #simple-menu{
     position: fixed;
     z-index: 999;
+   padding: 0;
+    margin: 0;
+}
+#menuimg{
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
 }
 
 
@@ -165,6 +186,7 @@ vertical-align: middle;
     }
     .textlogo{
         transform:translate(-50%, 40%);
+        position: absolute;
     }
         #scroller_content_one{
         height:100px
@@ -172,15 +194,23 @@ vertical-align: middle;
         #imagecover{
         height:auto;
     }
+    
 }
     
 @media only screen and (max-width : 400px) {
     
         .video-foreground,.video-background iframe {
         visibility: hidden;
-            
-            
+    
     }
+            
+        .textlogo{
+                width:400px; 
+                height: auto; 
+    }
+            
+            
+    
 }
     
     @media only screen and (max-width : 200px) { /*when width is less than 400*/
