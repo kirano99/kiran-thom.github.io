@@ -172,6 +172,58 @@ vertical-align: middle;
     padding: 50px
 }
 
+canvas{
+    border:1px solid #ffffff;
+    background-color: white;
+    margin: 310px
+}
+
+#controls{
+    position
+}
+
+
+#mycanvas {
+    width: 700px;
+    float:left; /* add this */
+}
+#controls {
+    overflow: hidden;
+    float: right;/* if you don't want #second to wrap below #first */
+    background-color:  #e11d22;
+    width: 800px;
+    height: 1000px;
+    margin: 210px
+}
+#selection{
+    margin: 0px;
+    position: relative;
+    left: 500px;
+    top: 130px
+}
+#custtitle{
+    margin: 0px;
+    position: relative;
+    left: 500px;
+    top: 100px;
+}
+h4{
+    margin: 7px;
+    font-size: 14pt;
+    color: white;
+
+}
+select{
+    width: 175px
+}
+
+canvas{
+    background: url('/Images/notitle.png');
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+}
+
+
 
 
 
@@ -189,6 +241,17 @@ vertical-align: middle;
     #simple-menu{
         visibility: hidden;
     }
+    
+    h1{
+        font-size: 70pt;
+    }
+    
+    #scrollbutton{
+        font-size: 40pt;
+    }
+
+
+    
     
     
     }

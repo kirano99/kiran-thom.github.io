@@ -39,3 +39,14 @@ function closeNav() {
 }
 
 
+function CanvasUpdate(){
+
+var canvas = document.getElementById("AlbumCanvas");
+var input = document.getElementById("inputtitle").value;
+var ctx = canvas.getContext("2d");
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "#e11d22";
+ctx.font = "40px GothamBook";
+ctx.fillText(input,10,50);
+
+}
