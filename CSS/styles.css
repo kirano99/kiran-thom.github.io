@@ -106,8 +106,6 @@ h1{
     margin: 0;
 }
 
-div{
-}
 
 #scroller_content_one{
     
@@ -137,7 +135,7 @@ vertical-align: middle;
     height: auto;  
     position:fixed;
     left:50%;
-    right 50%;
+    right: 50%;
     transform:translate(-50%, 0%);
     position: relative;
     z-index: 999;
@@ -173,27 +171,31 @@ vertical-align: middle;
 }
 
 canvas{
-    border:1px solid #ffffff;
-    background-color: white;
-    margin: 310px
+    position: absolute;
+    z-index:100;
+    background-color:transparent;
+    margin: 0px;
+    left:101px;
+    top:101px;
+    z-index: -1;
+    float: left;
 }
 
-#controls{
-    position
-}
 
-
-#mycanvas {
-    width: 700px;
-    float:left; /* add this */
-}
 #controls {
     overflow: hidden;
-    float: right;/* if you don't want #second to wrap below #first */
+    float: right;
     background-color:  #e11d22;
     width: 800px;
     height: 1000px;
-    margin: 210px
+    position: relative;
+    margin: 0px;
+    left:350px;
+    top:100px;
+    z-index: 3;
+    width: 700px;
+    float: left;
+    border:1px solid #ffffff;
 }
 #selection{
     margin: 0px;
@@ -217,10 +219,38 @@ select{
     width: 175px
 }
 
-canvas{
-    background: url('../Images/notitle.png');
-    background-repeat: no-repeat;
-    background-size: 700px 700px;
+.svg{
+    position: relative;
+    margin: 0px;
+    left:100px;
+    top:100px;
+    z-index: -1;
+    width: 700px;
+    float: left;
+    border:1px solid #ffffff;
+}
+#custom{
+    position: relative;
+    top:100px
+}
+
+.hiddenColor {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#colourchange{
+    position: relative;
+    right: 177px;
+    top: 28px;
+}
+
+#map{
+    margin: 50px;
 }
 
 

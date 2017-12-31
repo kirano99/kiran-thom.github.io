@@ -40,13 +40,37 @@ function closeNav() {
 
 
 function CanvasUpdate(){
-
+var colour = document.getElementById("c").value;
 var canvas = document.getElementById("AlbumCanvas");
 var input = document.getElementById("inputtitle").value;
 var ctx = canvas.getContext("2d");
 ctx.clearRect(0, 0, canvas.width, canvas.height);
-ctx.fillStyle = "#e11d22";
+ctx.fillStyle = colour;
 ctx.font = "40px GothamBook";
 ctx.fillText(input,10,50);
 
+}
+
+function CanvasColour(){
+  document.getElementById("c").focus();
+  document.getElementById("c").click();
+  var colour = document.getElementById("c").value;
+  return colour;
+}
+    
+function ShowColour1(){
+    
+  document.getElementById("CC1").focus();
+  document.getElementById("CC1").click();
+  var colour = document.getElementById("CC1").value;
+  return colour;
+    
+}    
+
+function ChangeColour1(){
+    
+    var colour = document.getElementById("CC1").value;
+    var temp = document.getElementById('#CanvasBack').childElementCount;
+    console.log(temp);
+    
 }

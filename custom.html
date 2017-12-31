@@ -38,11 +38,11 @@
 
         <div id="sidr">
             <ul>
-                <li class = "active"><a href="#">home</a></li>
-                <li><a href="#music">music</a></li>
-                <li><a href="#tour">tour</a></li>
-                <li><a href="#store">store</a></li>
-                <li><a href="#live">live</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="music.html">music</a></li>
+                <li><a href="tour.html">tour</a></li>
+                <li><a href="store.html">store</a></li>
+                <li class = "active"><a href="custom.html">live</a></li>
             </ul>
             </div>
         
@@ -51,15 +51,34 @@
                 <!--Customiser-->
         <section id="custom">
 
-            <div id="customdiv">
-            
-                <canvas id="AlbumCanvas" width="700px" height="700px"></canvas>
+            <div id="customdiv">                
+
+                
+                <img id="CanvasBack" class="svg" src='Images/albumcustom.svg'/>
+                
+                <canvas id="AlbumCanvas" width="700px" height="200px"></canvas>   
                 
                 <div id=controls>
+                    
+                    <div id=AlbumColourChange>
+                        
+                        <button id=ColourChange1 onclick="ShowColour1()">Change Colour 1</button>
+                        
+                        <input type="color" id="CC1" tabindex=- class="hiddenColor" onchange="ChangeColour1()"
+                        value="#e11d22">
+                        
+                        
+                    </div>
+                    
                     
                     <div id=custtitle>
                         <h4>Album Title:</h4>
                         <input id=inputtitle onchange="CanvasUpdate()">
+                        
+                        <button id=colourchange onclick="CanvasColour()"> Text Colour </button>
+                        
+                        <input type="color" id="c" tabindex=-1 class="hiddenColor" onchange="CanvasUpdate()"
+                               value="#e11d22">
                         
                     </div>
                     
@@ -88,6 +107,75 @@
                             </select>
                     </div>
 
+                                        <div id=selection>
+                        
+                        <h4>Track 3:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                            </select>
+                    </div>
+                                        <div id=selection>
+                        
+                        <h4>Track 4:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                            </select>
+                    </div>
+                                        <div id=selection>
+                        
+                        <h4>Track 5:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                            </select>
+                    </div>
+                    
+                                        <div id=selection>
+                        
+                        <h4>Track 6:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                            </select>
+                    </div>
+                    
+                                        <div id=selection>
+                        
+                        <h4>Track 7:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                            </select>
+                    </div>
+                    
+                                        <div id=selection>
+                        
+                        <h4>Track 8:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                            </select>
+                    </div>
                     
                     
                     
