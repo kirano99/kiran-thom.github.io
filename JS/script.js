@@ -20,6 +20,12 @@ $(window).scroll(function() {
     if ($(this).scrollTop()>400)
      {
         $('.video-foreground').fadeOut();
+         
+         
+         var player = document.getElementById('musicvid');
+         player.mute();
+         
+        console.log('muted')
      }
     else
      {

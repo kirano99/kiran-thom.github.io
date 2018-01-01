@@ -89,7 +89,7 @@ a{
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  pointer-events:none;
 }
 
 section{
@@ -302,17 +302,30 @@ select{
     }
     
 }
+
+@media only screen and (max-width : 430px) { /*when width is less than 700*/
+    
+}
     
 @media only screen and (max-width : 400px) {
     
         .video-foreground,.video-background iframe {
         visibility: hidden;
+    }
     
+    .video-background, .video-foreground{
+                height: 200px;
+                
     }
             
-        .textlogo{
+        .textlogo1{
                 width:400px; 
                 height: auto; 
+    }
+    
+    #playbutton{
+        margin: 0px;
+        padding: 0px
     }
             
             
