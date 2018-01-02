@@ -20,12 +20,6 @@ $(window).scroll(function() {
     if ($(this).scrollTop()>400)
      {
         $('.video-foreground').fadeOut();
-         
-         
-         var player = document.getElementById('musicvid');
-         player.mute();
-         
-        console.log('muted')
      }
     else
      {
@@ -52,7 +46,7 @@ var input = document.getElementById("inputtitle").value;
 var ctx = canvas.getContext("2d");
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 ctx.fillStyle = colour;
-ctx.font = "40px GothamBook";
+ctx.font = "40px Arial Black";
 ctx.fillText(input,10,50);
 
 }
@@ -71,12 +65,113 @@ function ShowColour1(){
   var colour = document.getElementById("CC1").value;
   return colour;
     
-}    
+}
 
 function ChangeColour1(){
+    var inputcolour = document.getElementById("CC1").value;
+    document.getElementById("head").style.fill = inputcolour;
+}
+
+function ShowColour2(){
     
-    var colour = document.getElementById("CC1").value;
-    var temp = document.getElementById('#CanvasBack').childElementCount;
-    console.log(temp);
+  document.getElementById("CC2").focus();
+  document.getElementById("CC2").click();
+  var colour = document.getElementById("CC2").value;
+  return colour;
     
 }
+
+function ChangeColour2(){
+    var inputcolour = document.getElementById("CC2").value;
+    document.getElementById("eyes").style.fill = inputcolour;
+}
+
+function ShowColour3(){
+    
+  document.getElementById("CC3").focus();
+  document.getElementById("CC3").click();
+  var colour = document.getElementById("CC3").value;
+  return colour;
+    
+}
+
+function ChangeColour3(){
+    var inputcolour = document.getElementById("CC3").value;
+    document.getElementById("path0").style.fill = inputcolour;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//$('.product').draggable({
+				//revert:true,
+				//proxy:'clone',
+				//onStartDrag:function(){
+				//	console.log("DRAG!");
+				//}
+				
+			//});    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
