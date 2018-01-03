@@ -46,8 +46,8 @@ var input = document.getElementById("inputtitle").value;
 var ctx = canvas.getContext("2d");
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 ctx.fillStyle = colour;
-ctx.font = "40px Arial Black";
-ctx.fillText(input,10,50);
+ctx.font = "45px Arial Black";
+ctx.fillText(input,30,100);
 
 }
 

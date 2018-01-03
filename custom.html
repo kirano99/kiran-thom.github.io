@@ -27,7 +27,7 @@
                 <a href="music.html" class="button bar-item">music</a>
                 <a href="tour.html" class="button bar-item">tour</a>
                 <a href="store.html" class="button bar-item">store</a>
-                <a href="custom.html" class="button bar-item">live</a>
+                <a href="http://live.deadmau5.com/" class="button bar-item">live</a>
             </nav>
             
         </div>
@@ -42,7 +42,8 @@
                 <li><a href="music.html">music</a></li>
                 <li><a href="tour.html">tour</a></li>
                 <li><a href="store.html">store</a></li>
-                <li class = "active"><a href="custom.html">live</a></li>
+                <li><a href="http://live.deadmau5.com/">live</a></li>
+                <li class = "active"><a href="custom.html">customiser</a></li>
             </ul>
             </div>
         
@@ -53,9 +54,9 @@
 
             <div id="customdiv">                
 
-                <svg xmlns="http://www.w3.org/2000/svg" id="svg"     width="100%"
-    height="100%"
-    viewBox="0 0 1000 1000">
+            <svg xmlns="http://www.w3.org/2000/svg" id="svg"     
+            height="800px"
+            viewBox="0 0 1000 410">
 
  <g>
   <title>background</title>
@@ -73,23 +74,23 @@
 </svg>
                 
                 
-                <canvas id="AlbumCanvas" width="700px" height="200px"></canvas>   
-                
+                <canvas id="AlbumCanvas" width="700px" height="670px"></canvas>   
+            
                 <div id=controls>
                     
                     <div id=AlbumColourChange>
                         
-                        <button id=ColourChange1 onclick="ShowColour1()">Change Colour 1</button>
+                        <button id=ColourChange1 onclick="ShowColour1()" class="button">Change Colour 1</button>
                         
                         <input type="color" id="CC1" tabindex=- class="hiddenColor" onchange="ChangeColour1()"
                         value="#e11d22">
                         
-                        <button id=ColourChange2 onclick="ShowColour2()">Change Colour 2</button>
+                        <button id=ColourChange2 onclick="ShowColour2()"class="button">Change Colour 2</button>
                         
                         <input type="color" id="CC2" tabindex=- class="hiddenColor" onchange="ChangeColour2()"
                         value="#e11d22">
                         
-                        <button id=ColourChange3 onclick="ShowColour3()">Change Colour 3</button>
+                        <!--<button id=ColourChange3 onclick="ShowColour3()"class="button">Change Colour 3</button>-->
                         
                         <input type="color" id="CC3" tabindex=- class="hiddenColor" onchange="ChangeColour3()"
                         value="#e11d22">
@@ -102,10 +103,10 @@
                         <h4>Album Title:</h4>
                         <input id=inputtitle onchange="CanvasUpdate()" value = "deadmau5W:/2016ALBUM/">
                         
-                        <button id=colourchange onclick="CanvasColour()"> Text Colour </button>
+                        <button id=colourchange onclick="CanvasColour()" class="button"> Text Colour And Preview </button>
                         
                         <input type="color" id="c" tabindex=-1 class="hiddenColor" onchange="CanvasUpdate()"
-                               value="#e11d22">
+                               value="#FF0245">
                         
                     </div>
                     
@@ -119,6 +120,15 @@
                                 <option value="LetGo">Let Go ft Grabbitz</option>
                                 <option value="2448">2448</option>
                                 <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
                             </select>
                     </div>
 
@@ -131,6 +141,15 @@
                                 <option value="LetGo">Let Go ft Grabbitz</option>
                                 <option value="2448">2448</option>
                                 <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
                             </select>
                     </div>
 
@@ -143,6 +162,15 @@
                                 <option value="LetGo">Let Go ft Grabbitz</option>
                                 <option value="2448">2448</option>
                                 <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
                             </select>
                     </div>
                                         <div id=selection>
@@ -154,6 +182,15 @@
                                 <option value="LetGo">Let Go ft Grabbitz</option>
                                 <option value="2448">2448</option>
                                 <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
                             </select>
                     </div>
                                         <div id=selection>
@@ -165,6 +202,15 @@
                                 <option value="LetGo">Let Go ft Grabbitz</option>
                                 <option value="2448">2448</option>
                                 <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
                             </select>
                     </div>
                     
@@ -177,6 +223,15 @@
                                 <option value="LetGo">Let Go ft Grabbitz</option>
                                 <option value="2448">2448</option>
                                 <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
                             </select>
                     </div>
                     
@@ -189,6 +244,15 @@
                                 <option value="LetGo">Let Go ft Grabbitz</option>
                                 <option value="2448">2448</option>
                                 <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
                             </select>
                     </div>
                     
@@ -201,9 +265,100 @@
                                 <option value="LetGo">Let Go ft Grabbitz</option>
                                 <option value="2448">2448</option>
                                 <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
                             </select>
                     </div>
                     
+                                                            <div id=selection>
+                        
+                        <h4>Track 9:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
+                            </select>
+                    </div>
+                                                            <div id=selection>
+                        
+                        <h4>Track 10:</h4>
+                            
+                            <select>
+                                         <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
+                            </select>
+                    </div>
+                                                            <div id=selection>
+                        
+                        <h4>Track 11:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
+                            </select>
+                    </div>
+                                                            <div id=selection>
+                        
+                        <h4>Track 12:</h4>
+                            
+                            <select>
+                                <option></option>
+                                <option value="LetGo">Let Go ft Grabbitz</option>
+                                <option value="2448">2448</option>
+                                <option value="4ware">4ware</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Ghosts N Stuff">Ghosts N Stuff</option>
+                                <option value="Legendary">Legendary</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="The Veldt">The Veldt</option>
+                                <option value="Imaginary Friends">Imaginary Friends</option>
+                                <option value="Snowcone">Snowcone</option>
+                                <option value="Three Pound Chicken Wing">Three Pound Chicken Wing</option>
+                                <option value="No Problem">No Problem</option>
+                            </select>
+                    </div>
+                    
+                     <button id="AddCustomToCart" onclick="" class="button">Add To Cart</button>
                     
                     
                     
@@ -232,12 +387,6 @@
                 </div>
             </div>
         
-        </section>
-        
-        
-        <section id=smallscroll>
-            <img src="Images/mau5trap_pink.png" id=smalllogobottom>
-            <h3>© mau5trap 2017</h3>
         </section>
         
         

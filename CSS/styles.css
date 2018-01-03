@@ -175,8 +175,8 @@ canvas{
     z-index:100;
     background-color:transparent;
     margin: 0px;
-    left:101px;
-    top:101px;
+    top: 200px;
+    left: 50px;
     z-index: 100;
     float: left;
 }
@@ -184,17 +184,15 @@ canvas{
 
 #controls {
     overflow: hidden;
-    float: right;
     background-color:  #e11d22;
-    width: 800px;
     height: 1000px;
-    position: fixed;
+    position: absolute;
+    top: 200px;
+    Right: 400px;
     margin: 0px;
-    left:1200px;
-    top:200px;
     z-index: 3;
-    width: 700px;
-    float: left;
+    width: 400px;
+    float: right;
     border:1px solid #ffffff;
 }
 #selection{
@@ -205,22 +203,27 @@ canvas{
 }
 #custtitle{
     margin: 0px;
-    position: relative;
-    left: 500px;
-    top: 100px;
+
 }
 h4{
     margin: 7px;
     font-size: 14pt;
     color: white;
+    position: relative;
+    Right: 450px;
+    Top: -100px;
 
 }
 select{
-    width: 175px
+    width: 175px;
+    margin: 0px;
+    position: relative;
+    Right: 450px;
+    Top: -100px;
 }
 #custom{
     position: relative;
-    top:100px
+    top:20px
 }
 
 .hiddenColor {
@@ -332,6 +335,7 @@ svg{
     top: 90px;
     left: 50px;
     margin = 0;
+    flex-shrink: 0;
 }
 
 svg #head:{
@@ -348,6 +352,25 @@ svg #path0{
 
 #AlbumCanvas{
     letter-spacing: 0;
+    border: 1px solid white;
+
+}
+
+#AddCustomToCart{
+    position: relative;
+    top: 50px;
+    left: 50px
+}
+
+#colourchange{
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+#inputtitle{
+    position: relative;
+    left: 30px;
 }
 
 
@@ -382,6 +405,13 @@ svg #path0{
     
     }
 
+@media only screen and (max-width : 1400px) {
+    #controls{
+        top: 1000px;
+        Right: 1500px;
+    }
+}
+
 @media only screen and (max-width : 700px) { /*when width is less than 700*/
     .bar-item{
         visibility: hidden;
@@ -397,10 +427,11 @@ svg #path0{
         height:auto;
     }
     
+    
 }
 
-@media only screen and (max-width : 430px) { /*when width is less than 700*/
-    
+@media only screen and (max-width : 430px) { /*when width is less than 430*/
+
 }
     
 @media only screen and (max-width : 400px) {
