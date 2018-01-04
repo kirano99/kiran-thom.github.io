@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width,minimum-scale=1">
         
         <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
-        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css"> <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+	   <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
         
-    <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
-
+        <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
         <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script> 
     <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+        <script src="/JS/jquery.flip.min.js"></script>
     <script src = "JS/script.js"></script>
 
         
@@ -56,91 +57,263 @@
         
         <!-- Scrolling Content -->
         
-        <div id=Text_One>
-
-        </div>
-
         
         <section id=scroller_content_one>
              <div id=Text_One>
-                 
-                 <ul class="storeitems">
+                 <ul class="products">
                       <li>
-                        <a href="#" class="product">
-                            <img src="Images/AlbumArt/STR.jpg" class="clickimage"/>
+                        <a href="#" class="item">
+                            <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/STR.png" class="clickimage"/>
+                                </div>
+                            </div>
                              <div class="pricehold">
-                                <p class="Name" data="xxxx"> Item 1</p>
-                                <p>Price : £25</p>
+                                <p class="Name" data="xxxx"> Strobe : The Remixes</p>
+                                <p>Price : £5</p>
+                            </div>
+                        </a>
+                     </li>
+                     
+                    <li>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/veldt.jpg" class="clickimage"/>
+                            </div>
+                            </div>
+                             <div class="pricehold">
+                                <p class="Name" data="xxxx">The Veldt ft. Chris James</p>
+                                <p>Price : £5</p>
                             </div>
                         </a>
                      </li>
                      
                      <li>
-                        <a href="#" class="product">
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
                             <img src="Images/AlbumArt/2016.png" class="clickimage"/>
+                            </div>
+                            </div>
                              <div class="pricehold">
-                                <p class="Name" data="xxxx"> Item 1</p>
-                                <p>Price : £25</p>
+                                <p class="Name" data="xxxx">W:/2016ALBUM</p>
+                                <p>Price : £20</p>
                             </div>
                         </a>
                      </li>
                      
                      <li>
-                        <a href="#" class="product">
-                            <img src="Images/AlbumArt/W12.jpg" class="clickimage"/>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/W12.png" class="clickimage"/>
+                            </div>
+                            </div>
                              <div class="pricehold">
-                                <p class="Name" data="xxxx"> Item 1</p>
-                                <p>Price : £25</p>
+                                <p class="Name" data="xxxx">while(1<2)</p>
+                                <p>Price : £20</p>
                             </div>
                         </a>
                      </li>
                      
                      <li>
-                        <a href="#" class="product">
-                            <img src="Images/AlbumArt/4x4.jpg" class="clickimage"/>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/4x4.png" class="clickimage"/>
+                            </div>
+                            </div>
                              <div class="pricehold">
-                                <p class="Name" data="xxxx"> Item 1</p>
-                                <p>Price : £25</p>
+                                <p class="Name" data="xxxx">4x4=12</p>
+                                <p>Price : £20</p>
                             </div>
                         </a>
                      </li>
                      
                      <li>
-                        <a href="#" class="product">
-                            <img src="Images/AlbumArt/ATGH.jpg" class="clickimage"/>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/ATGH.png" class="clickimage"/>
+                            </div>
+                            </div>
                              <div class="pricehold">
-                                <p class="Name" data="xxxx"> Item 1</p>
-                                <p>Price : £25</p>
+                                <p class="Name" data="xxxx">>album title goes here<</p>
+                                <p>Price : £20</p>
                             </div>
                         </a>
                      </li>
                      
                      <li>
-                        <a href="#" class="product">
-                            <img src="Images/AlbumArt/FLOABN.jpg" class="clickimage"/>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/FLOABN.png" class="clickimage"/>
+                            </div>
+                            </div>
                              <div class="pricehold">
-                                <p class="Name" data="xxxx"> Item 1</p>
-                                <p>Price : £25</p>
+                                <p class="Name" data="xxxx">for lack of a better name</p>
+                                <p>Price : £20</p>
                             </div>
                         </a>
                      </li>
                      
                      <li>
-                        <a href="#" class="product">
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
                             <img src="Images/AlbumArt/RAT.png" class="clickimage"/>
+                            </div>
+                            </div>
                              <div class="pricehold">
-                                <p class="Name" data="xxxx"> Item 1</p>
-                                <p>Price : £25</p>
+                                <p class="Name" data="xxxx">RANDOM ALBUM TITLE</p>
+                                <p>Price : £15</p>
                             </div>
                         </a>
                      </li>
                      
                      <li>
-                        <a href="#" class="product">
-                            <img src="Images/AlbumArt/VEX.jpg" class="clickimage"/>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/VEX.png" class="clickimage"/>
+                            </div>
+                            </div>
                              <div class="pricehold">
-                                <p class="Name" data="xxxx"> Item 1</p>
+                                <p class="Name" data="xxxx">VEXILLOLOGY</p>
                                 <p>Price : £25</p>
+                            </div>
+                        </a>
+                     </li>
+                     <!------------------------------------------------------->
+
+                     
+                    <li>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/tee1.jpg" class="clickimage"/>
+                            </div>
+                            </div>
+                             <div class="pricehold">
+                                <p class="Name" data="xxxx">deadmau5 : logo tee</p>
+                                <p>Price : £30</p>
+                            </div>
+                        </a>
+                     </li>
+                     
+                    <li>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/tee2.jpg" class="clickimage"/>
+                            </div>
+                            </div>
+                             <div class="pricehold">
+                                <p class="Name" data="xxxx">deadmau5 : brick tee</p>
+                                <p>Price : £30</p>
+                            </div>
+                        </a>
+                     </li>
+                     
+                    <li>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/tee3.jpg" class="clickimage"/>
+                            </div>
+                            </div>
+                             <div class="pricehold">
+                                <p class="Name" data="xxxx">deadmau5 : album tee</p>
+                                <p>Price : £30</p>
+                            </div>
+                        </a>
+                     </li>
+                     
+                    <li>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/tee4.jpg" class="clickimage"/>
+                            </div>
+                            </div>
+                             <div class="pricehold">
+                                <p class="Name" data="xxxx">deadmau5 : head tee</p>
+                                <p>Price : £30</p>
+                            </div>
+                        </a>
+                     </li>
+                     
+                                         <li>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/tee5.jpg" class="clickimage"/>
+                            </div>
+                            </div>
+                             <div class="pricehold">
+                                <p class="Name" data="xxxx">deadmau5 : art tee</p>
+                                <p>Price : £30</p>
+                            </div>
+                        </a>
+                     </li>
+                     
+                    <li>
+                        <a href="#" class="item">
+                                <div class="flip">
+                                <div class="back">
+                                <h5>HELLO</h5>
+                                </div>
+                                <div class="front">
+                            <img src="Images/AlbumArt/tour.png" class="clickimage"/>
+                            </div>
+                            </div>
+                             <div class="pricehold">
+                                <p class="Name" data="xxxx">TOUR TICKET</p>
+                                <p>Price : £75</p>
                             </div>
                         </a>
                      </li>
@@ -149,12 +322,12 @@
                  
         <div class="cart">
 		  <h3>Your Cart</h3>
-		      <div style="background:#fff">
+		      <div>
 		          <table id="cartcontent" fitColumns="true">
 			         <thead>
 				        <tr>
-					       <th field="name" width=140>Name</th>
-					       <th field="quantity" width=60 align="right">Quantity</th>
+					       <th field="name" width=160>Name</th>
+					       <th field="quantity" width=40 align="right">Num</th>
 					       <th field="price" width=60 align="right">Price</th>
 				        </tr>
 			         </thead>
@@ -166,34 +339,6 @@
                  
         <section id=imagecover>
                         <img src="Images/deadmau5head.jpg" id="coverpicture">
-        </section>
-                 
-                 
-            </div>
-        </section>
-        
-        
-        <section id=imagecover>
-            
-        </section>
-        
-        
-        <section id=scroller_content_one>
-             <div id=Text_One>
-    
-            </div>
-        </section>
-        
-
-        
-        <section id=scroller_content_one>
-             <div id=Text_One>
-
-            </div>
-        </section>
-        
-        <section id=imagecover>
-            
         </section>
         
         <section id=smallscroll>
