@@ -12,7 +12,47 @@ $(function(){
     $('#simple-menu').sidr();
     $(".navclass").fadeIn(5000).removeClass('hidden');
     $(".textlogo").fadeIn(5000).removeClass('hidden');
-    console.log('animation')   
+    console.log('animation')
+    
+ console.log('fired');
+    
+          $("#clearbtn").click( function()
+           {
+             console.log('click/clear'); //clear storage
+            localStorage.clear();
+              $(".button").css("background-color", "#e11d22")
+              $("h1").css("color", "#e11d22")
+           }
+                               );  
+    
+    if(localStorage && localStorage.getItem('background'))
+        { //check for storage
+            var colour = localStorage.getItem('background');
+            
+            console.log('colour should be' +colour);
+            
+            $(".button").css("background-color", colour)
+            $("h1").css("color", colour)//change css
+        }
+    
+    
+$('#inputname').change(function() //when colour changes
+{
+var col = $(this).val();
+    
+   // save local storage
+var background_colour = $('#inputname').val();
+localStorage.setItem('background', background_colour);
+    
+    $(".button").css("background-color", background_colour)
+    $("h1").css("color", colour)
+
+}
+);   
+    
+    
+     
+    
 });
 
 $(window).scroll(function() {
@@ -106,6 +146,21 @@ var data = {"total":0,"rows":[]};
 		var totalCost = 0;
 		
 		$(function(){
+            
+            if(localStorage && window.localStorage.length != 0){
+                
+                var test1 = localStorage.getItem('data');
+                var test2 = localStorage.getItem('tdata');
+            
+                var testparse = JSON.parse(test1);
+                
+            }
+                
+                else{
+                    
+                console.log("NO LOCAL STORAGE");    
+                }
+            
 			$('#cartcontent').datagrid({
 				singleSelect:true
 			});
@@ -143,6 +198,10 @@ var data = {"total":0,"rows":[]};
 						row.quantity += 1;
 						return;
 					}
+                    
+                
+                    
+                    
 				}
 				data.total += 1;
 				data.rows.push({
@@ -155,7 +214,7 @@ var data = {"total":0,"rows":[]};
                 
                 console.log(data);
                 
-                sessionStorage.setItem('data', jsonstring);
+                localStorage.setItem('data', jsonstring);
                 
                 
 			}
@@ -168,8 +227,8 @@ var data = {"total":0,"rows":[]};
                 
             console.log(data);
                 
-            sessionStorage.setItem('data', jsonstring);
-            sessionStorage.setItem('tdata', totalCost);
+            localStorage.setItem('data', jsonstring);
+            localStorage.setItem('tdata', totalCost);
 		}
 
 $(function(){
@@ -180,8 +239,8 @@ $(function(){
 
 $(function(){
     
-    var getjson = sessionStorage.getItem('data');
-    var totjson = sessionStorage.getItem('tdata');
+    var getjson = localStorage.getItem('data');
+    var totjson = localStorage.getItem('tdata');
     
    var parsejson = JSON.parse(getjson);
     
@@ -190,6 +249,8 @@ $(function(){
     
     $('#cartcontent').datagrid('loadData', parsejson);
     $('div.cart .total').html('Total: £'+totjson);
+    
+
         
 });
 
