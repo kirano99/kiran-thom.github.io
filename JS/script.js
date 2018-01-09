@@ -45,7 +45,7 @@ var background_colour = $('#inputname').val();
 localStorage.setItem('background', background_colour);
     
     $(".button").css("background-color", background_colour)
-    $("h1").css("color", colour)
+    $("h1").css("color", background_colour)
 
 }
 );   
